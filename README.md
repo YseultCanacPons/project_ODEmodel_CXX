@@ -73,11 +73,11 @@ Valeur finale de CT = 0.326382
 ## Mathematical Model
 
 The ODE system models interactions between three compartments :
-$$
+$
 dCA/dt = -α·CA + β·CS  
 dCS/dt =  α·CA − (β + γ)·CS + δ·CT  
 dCT/dt =  γ·CS − δ·CT
-$$
+$
 Parameters are stored in parametres.h and can be modified easily.
 
 ---
@@ -87,16 +87,16 @@ Parameters are stored in parametres.h and can be modified easily.
 ### Explicit Euler
 
 Simple and fast, but conditionally stable :
-$$
+$
 y_{n+1} = y_n + dt * f(y_n)
-$$
+$
 
 ### Implicit Euler (Newton method)
 
-Satble for stiff systems :
-$$
+Stable for stiff systems :
+$
 y_{n+1} = y_n + dt * f(y_{n+1})
-$$
+$
 
 Impplemented with :
 - Analytical Jacobian
